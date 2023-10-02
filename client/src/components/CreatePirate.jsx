@@ -43,7 +43,7 @@ const CreatePirate = () => {
                 hand,
             })
             .then(() => {
-                navigate("/pirates");
+                navigate("/");
             })
             .catch((err) => {
                 if (err.response && err.response.data && err.response.data.errors) {
@@ -59,7 +59,7 @@ const CreatePirate = () => {
             <div className="header">
                 <div className="hero_buttons">
                     <h1>Add Pirates</h1>
-                    <button onClick={() => navigate("/pirates")}>Crew Board</button>
+                    <button onClick={() => navigate("/")}>Crew Board</button>
                 </div>
             </div>
 
@@ -148,3 +148,7 @@ const CreatePirate = () => {
 };
 
 export default CreatePirate;
+
+
+
+

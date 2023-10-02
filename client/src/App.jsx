@@ -9,9 +9,10 @@ function App() {
     <>
       <Router>
         <Routes>
-          <Route path='/pirate/new' element={<CreatePirate/>}  />
-          <Route path='/pirates' element={<UserList/>}  />
-          <Route path='/pirate/:id' element={<UserById/>}  />
+    
+          <Route path='/pirate/new' element={<CreatePirate />} />
+          <Route path='/' element={<UserList />} />
+          <Route path='/pirate/:id' element={<UserById />} />
         </Routes>
       </Router>
     </>
